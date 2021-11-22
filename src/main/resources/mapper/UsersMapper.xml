@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.springmybatiswebannotation.dao.UserMapper">
+<!--public Users queryMsgById(Integer id);-->
+   <select id="queryUserById" parameterType="int" resultType="users">
+        select * from elm_user where userid=#{id}
+    </select>
+
+</mapper>
